@@ -127,7 +127,7 @@ header {
 .navbar .navbar-collapse button:first-of-type {
     background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
     font-size: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .navbar .navbar-collapse button:last-of-type {
@@ -136,7 +136,7 @@ header {
 }
 
 .navbar figure {
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 .navbar figure .kozera-text {

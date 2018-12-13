@@ -34,7 +34,7 @@ function resize() {
         headerBg.style.backgroundColor = 'white';
     } else {
         menuBtn.addEventListener('click', headerColor);
-        headerBg.style.backgroundColor = 'transparent';
+        // headerBg.style.backgroundColor = 'transparent';
     }
 };
 

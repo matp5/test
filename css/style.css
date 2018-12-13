@@ -4,7 +4,7 @@ body {
 }
 
 .page-wrapper {
-    height: 100vh;
+    height: 100%;
 }
 
 /* header start */
@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: #fff;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     z-index: 1;
     padding-top: 20px;
@@ -202,7 +202,7 @@ main,
     font-size: 50px;
     font-weight: 200;
     position: absolute;
-    top: 67%;
+    bottom: 20%;
     left: 5%;
 }
 
@@ -399,6 +399,44 @@ main,
 }
 
 @media screen and (max-width: 720px) {
+    header {
+        padding: 0;
+    }
+
+    .navbar img {
+        height: 100px;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item:first-of-type,
+    .navbar .navbar-collapse .navbar-nav .nav-item:last-of-type {
+        margin: 0;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item:hover:before,
+    .navbar .navbar-collapse .navbar-nav .nav-item:hover:after {
+        display: none;
+    }
+
+    .navbar .navbar-collapse button {
+        height: 40px;
+    }
+
+    .navbar .navbar-collapse button:first-of-type,
+    .navbar .navbar-collapse button:last-of-type {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .navbar figure img {
+        width: 120px;
+        height: 50px;
+    }
+
     .call-text {
         display: none;
     }

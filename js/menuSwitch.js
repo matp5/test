@@ -5,4 +5,5 @@ $(function () {
         var active = $(this).attr('href');
         $(active).removeClass('inactive-content').addClass('active-content');
     });
+
 });

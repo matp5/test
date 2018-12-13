@@ -1,0 +1,344 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.page-wrapper {
+    height: 100vh;
+}
+
+/* header start */
+.page-wrapper {
+    display: flex;
+    height: auto;
+}
+
+header {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.navbar .navbar-toggler {
+    color: #e86a36;
+    border: 2px solid #e86a36;
+}
+
+.navbar .navbar-collapse .navbar-nav {
+    position: relative;
+    display: block;
+    padding-top: 30px;
+    width: 100%;
+}
+
+
+
+.navbar .navbar-collapse .navbar-nav:before,
+.navbar .navbar-collapse .navbar-nav:after {
+    left: 0;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    position: relative;
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:before,
+.navbar .navbar-collapse .navbar-nav .nav-item:after {
+    position: absolute;
+    content: ' ';
+    margin: auto;
+    height: 1px;
+    width: 10px;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+    opacity: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:hover:before,
+.navbar .navbar-collapse .navbar-nav .nav-item:hover:after {
+    opacity: 1;
+    width: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:after {
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:first-of-type {
+    margin-top: 30px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item:last-of-type {
+    margin-bottom: 30px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #292929;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active {
+    position: absolute;
+    content: ' ';
+    top: 50%;
+    left: 0;
+    margin: auto;
+    height: 1px;
+    width: 10px;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+    opacity: 1;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active {
+    position: absolute;
+    content: ' ';
+    top: 50%;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    width: 10px;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+    opacity: 1;
+}
+
+.navbar .navbar-collapse button {
+    border: none;
+    color: white;
+    border-radius: 0;
+    height: 50px;
+}
+
+.navbar .navbar-collapse button:first-of-type {
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.navbar .navbar-collapse button:last-of-type {
+    background-color: #4966b1;
+    font-size: 16px;
+}
+
+.navbar figure {
+    padding-top: 70px;
+}
+
+.navbar figure .kozera-text {
+    padding-top: 20px;
+}
+
+.navbar figure .kozera-text h4 {
+    color: #969696;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+/* header end */
+
+/* main page start */
+main,
+.main-page,
+.investment,
+.office,
+.gallery,
+.location {
+    height: 100%;
+    width: 100%;
+}
+
+.main-wrapper {
+    height: 50vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.main-wrapper h2 {
+    color: #ffffff;
+    font-family: "Titillium Web";
+    font-size: 50px;
+    font-weight: 200;
+    position: absolute;
+    top: 67%;
+    left: 5%;
+}
+
+.main-wrapper .btn {
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+.main-wrapper1 {
+    background-image: url('../img/s1.png');
+}
+
+.main-wrapper2 {
+    background-image: url('../img/s2.png');
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/s3.png');
+}
+
+/* main page end */
+
+/* gallery start */
+.gallery .section-header {
+    margin-bottom: 30px;
+}
+
+.gallery .img-fluid {
+    padding: 15px;
+    min-width: 180px;
+}
+
+/* gallery end */
+
+/* location start */
+.location .location-mins {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.location .location-list {
+    padding-top: 0;
+}
+
+/* location end */
+
+/* common code start*/
+.investment .container-fluid,
+.gallery .container-fluid,
+.office .container-fluid,
+.location .container-fluid {
+    padding: 0 5% 0 5%;
+}
+
+
+[class^="col-"] {
+    padding: 0;
+}
+
+.section-header {
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0 80px 0;
+}
+
+.section-header:after {
+    content: '';
+    border-top: 1px solid #ed8731;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    margin: 0 0 0 20px;
+}
+
+.section-btn {
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+}
+
+.custom-desc {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 20px 0 20px 0;
+}
+
+.custom-text {
+    margin-right: 20px;
+}
+
+.custom-list-item .fa-check-circle {
+    color: #ed8231;
+}
+
+.active-content {
+    display: block;
+}
+
+.inactive-content {
+    display: none;
+}
+
+.call {
+    height: 100%;
+    position: relative;
+}
+
+
+.call-desc {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    bottom: 20px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
+}
+
+
+
+/* common code end */
+
+/* media start */
+@media screen and (max-width: 991px) {
+    .page-wrapper header {
+        position: fixed;
+        background-color: transparent;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .call-text {
+        display: none;
+    }
+}
+
+/* media end */

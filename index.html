@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI"
+        crossorigin="anonymous"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200, 300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class='page-wrapper'>
+        <header id='header'>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" id='menu-btn' onclick='headerColor()' data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+
+                </button>
+                <div class="collapse navbar-collapse flex-column text-center" id="navbarNav">
+                    <img src="./img/logo.png" alt="">
+                    <ul class='navbar-nav'>
+                        <li class="nav-item"><a class='nav-link' href="#main-page">strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#investment">o inwestycji</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#office">dla kancelarii</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#location">lokalizacja</a></li>
+                    </ul>
+                    <button class='btn btn-lg btn-block'><i class="fas fa-phone fa-rotate-90"></i> +48
+                        <span style='font-weight: bold;'>698 409 066 </span></button>
+                    <button class='btn btn-lg btn-block '><i class="fab fa-facebook"></i> Śledź postępy inwestycji</button>
+
+                    <figure>
+                        <img src="./img/kozera.png" alt="">
+                        <div class='kozera-text'>
+                            <h4>&copy; 2018 kozera budownictwo </h4>
+                            <h4>projekt i realizacja: 3ck studio</h4>
+                        </div>
+                    </figure>
+                </div>
+            </nav>
+        </header>
+
+        <main role='main'>
+            <section class='main-page active-content' id='main-page'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class='col-lg-6 col-md-12'>
+                            <div class='main-wrapper main-wrapper1'>
+                                <h2>Mieszkania</h2>
+                                <button class='btn'>Zobacz wolne mieszkania!</button>
+                            </div>
+                            <div class='main-wrapper main-wrapper2'>
+                                <h2>Dla kancelarii</h2>
+                                <button class='btn'>Idealne na kancelarię / biuro</button>
+                            </div>
+                        </div>
+
+                        <div class='col-lg-6 d-none d-lg-block'>
+                            <div class="banner"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="investment inactive-content" id='investment'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h3 class='section-header'>O inwestycji</h3>
+                        <div class="col-lg-6 col-md-12">
+                            <p class='custom-desc'>Siedmiopiętrowy obiekt z mieszkaniami i usługami w parterze
+                                oraz
+                                dwukondygnacyjnym
+                                parkingiem podziemnym na 65 miejsc. Przewidziano 48 mieszkań o powierzchni od 40 do
+                                150
+                                m2 i 8 lokali handlowo-usługowych. W każdym mieszkaniu przewidziano balkon, taras
+                                lub
+                                loggię.
+                            </p>
+                            <p class='custom-text'>
+                                Pellentesque aliquam iaculis lectus sit amet imperdiet. Morbi dapibus vitae dolor
+                                ut
+                                hendrerit. Aenean a nisi eu nisl ultrices vulputate. Cras a suscipit sem. Sed
+                                egestas,
+                                ante ut hendrerit dapibus, tellus nisi malesuada tortor, eget viverra augue elit
+                                sed
+                                diam.
+                            </p>
+                            <ul class='custom-list'>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Etiam ut mi ac ante semper semper eu at lacus. Pellentesque a dictum augue.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Sed vulputate tincidunt ligula, a luctus odio ultrices eget.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Quisque mi massa, imperdiet blandit tempor id, semper ut ante.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Maecenas vehicula dui id faucibus sodales. Ut sed scelerisque dui.
+
+                                </li>
+                            </ul>
+                            <button class="btn section-btn">Zobacz wolne mieszkania!</button>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <img src="./img/movie.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery inactive-content" id='gallery'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h3 class="section-header">Galeria</h3>
+                        <div class="col-md-4 col-sm-6">
+                            <img class="img-fluid" src="./img/g1.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <img class="img-fluid" src="./img/g2.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <img class="img-fluid" src="./img/g3.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <img class="img-fluid" src="./img/g4.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <img class="img-fluid" src="./img/g5.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <img class="img-fluid" src="./img/g6.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="office inactive-content" id='office'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h3 class="section-header">Dla kancelarii</h3>
+                        <div class="col-lg-7 col-md-12">
+                            <p class='custom-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                mattis
+                                metus ut pretium feugiat. Donec ac urna at ex semper congue vel iaculis magna.
+                                Etiam
+                                fermentum, diam id vulputate molestie, quam velit eleifend odio, non semper est ex
+                                in
+                                ligula.
+                            </p>
+                            <p class='custom-text'>
+                                Proin vel tincidunt ex. Vivamus efficitur urna tellus. Vestibulum vel lorem
+                                gravida,
+                                ullamcorper massa ac, laoreet massa. Aliquam cursus quam vitae auctor auctor.
+                            </p>
+
+                            <p class='custom-text'>
+                                Pellentesque aliquam iaculis lectus sit amet imperdiet. Morbi dapibus vitae dolor
+                                ut
+                                hendrerit. Aenean a nisi eu nisl ultrices vulputate. Cras a suscipit sem. Sed
+                                egestas,
+                                ante ut hendrerit dapibus, tellus nisi malesuada tortor, eget viverra augue elit
+                                sed
+                                diam.
+                            </p>
+                            <ul class='custom-list'>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Etiam ut mi ac ante semper semper eu at lacus. Pellentesque a dictum augue.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Sed vulputate tincidunt ligula, a luctus odio ultrices eget.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Quisque mi massa, imperdiet blandit tempor id, semper ut ante.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Maecenas vehicula dui id faucibus sodales. Ut sed scelerisque dui.
+
+                                </li>
+                            </ul>
+                            <button class="btn section-btn">Zobacz wolne mieszkania!</button>
+                        </div>
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <img src="./img/office.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="location inactive-content" id='location'>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h3 class="section-header">Lokalizacja</h3>
+                        <div class="col-lg-6">
+                            <p class='custom-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis
+                                metus
+                                ut
+                                pretium
+                                feugiat. </p>
+
+                            <p class='custom-desc'>Proin vel tincidunt ex. Vivamus efficitur urna tellus.
+                                Vestibulum vel lorem gravida,
+                                ullamcorper massa ac, laoreet massa. Aliquam cursus quam vitae auctor auctor.
+                                Pellentesque aliquam iaculis lectus sit amet imperdiet. Morbi dapibus vitae dolor
+                                ut
+                                hendrerit. Aenean a nisi eu nisl ultrices vulputate. Cras a suscipit sem. </p>
+
+                            <h6 class='location-mins'>5-10 minut:</h6>
+                            <ul class='custom-list location-list'>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Etiam ut mi ac ante semper semper eu at lacus. Pellentesque a dictum augue.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Sed vulputate tincidunt ligula, a luctus odio ultrices eget.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Quisque mi massa, imperdiet blandit tempor id, semper ut ante.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Maecenas vehicula dui id faucibus sodales. Ut sed scelerisque dui.
+
+                                </li>
+                            </ul>
+                            <h6 class='location-mins'>10-20minut</h6>
+                            <ul class='custom-list location-list'>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Etiam ut mi ac ante semper semper eu at lacus. Pellentesque a dictum augue.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Sed vulputate tincidunt ligula, a luctus odio ultrices eget.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Quisque mi massa, imperdiet blandit tempor id, semper ut ante.
+
+                                </li>
+                                <li class='custom-list-item'><i class="far fa-check-circle"></i>
+                                    Maecenas vehicula dui id faucibus sodales. Ut sed scelerisque dui.
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 location-map">
+                            <div><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=designum%20kielce&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+            </section>
+        </main>
+    </div>
+
+    <div class='call'>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle-lg btn-primary call-desc "><img
+                src="./img/call.png" alt="">
+            <p class='call-text'>Zostaw numer, <span style='display: block; font-weight: 600;'>oddzwonimy!</span> </p>
+        </a>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script src='./js/menuSwitch.js'></script>
+    <script src='./js/menuButton.js'></script>
+</body>
+
+</html>

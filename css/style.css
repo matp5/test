@@ -16,11 +16,15 @@ body {
 header {
     background-color: #fff;
     height: 100vh;
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar .navbar-toggler {
+    background-color: #f2f2f2;
     color: #e86a36;
     border: 2px solid #e86a36;
+
 }
 
 .navbar .navbar-collapse .navbar-nav {
@@ -45,7 +49,7 @@ header {
 .navbar .navbar-collapse .navbar-nav .nav-item {
     position: relative;
     display: block;
-    padding: 15px;
+    padding: 10px;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -164,6 +168,16 @@ main,
     height: 100%;
     width: 100%;
 }
+
+.main-page,
+.investment,
+.office,
+.gallery,
+.location {
+    padding-left: 240px;
+}
+
+
 
 .main-wrapper {
     height: 50vh;
@@ -310,7 +324,7 @@ main,
 
 
 .call-desc {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,16 +337,28 @@ main,
     background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
 }
 
-
+.whiteBg {
+    background-color: #fff !important;
+}
 
 /* common code end */
 
 /* media start */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .page-wrapper header {
-        position: fixed;
         background-color: transparent;
-        z-index: 1;
+    }
+
+    .main-page {
+        padding: 0;
+    }
+
+    .investment,
+    .office,
+    .gallery,
+    .location {
+        padding: 0 15px 20px 15px;
+
     }
 }
 

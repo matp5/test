@@ -1,48 +1,23 @@
-// let headerBg = document.getElementById('header');
-// let menuBtn = document.getElementById('menu-btn');
-
-// window.addEventListener('resize', resize);
-// headerBg.style.backgroundColor = 'white';
-
-// function resize() {
-//     if (window.innerWidth > 992) {
-//         menuBtn.removeEventListener('click', headerColor);
-//         headerBg.style.backgroundColor = 'white';
-//     } else {
-//         headerBg.style.backgroundColor = 'transparent';
-//     }
-// };
-
-// function headerColor() {
-//     if (headerBg.style.backgroundColor == 'white') {
-//         headerBg.style.backgroundColor = 'transparent';
-//     } else {
-//         headerBg.style.backgroundColor = 'white';
-//     }
-
-// };
-
 let headerBg = document.getElementById('header');
 let menuBtn = document.getElementById('menu-btn');
 
-window.addEventListener('resize', resize);
-headerBg.style.backgroundColor = 'white';
+let tablet = window.matchMedia("screen and (max-width: 992px)");
 
-function resize() {
-    if (window.innerWidth > 992) {
-        menuBtn.removeEventListener('click', headerColor);
-        headerBg.style.backgroundColor = 'white';
+let currentWindowWidth = window.innerWidth;
+
+function checkCurrentWidth() {
+    if (currentWindowWidth < 992) {
+        menuBtn.addEventListener('click', changeHeaderColor);
     } else {
-        menuBtn.addEventListener('click', headerColor);
-        // headerBg.style.backgroundColor = 'transparent';
+        tablet.addListener(mobile => {
+            if (mobile.matches) {
+                menuBtn.addEventListener('click', changeHeaderColor)
+            }
+        })
     }
-};
+}
+checkCurrentWidth()
 
-function headerColor() {
-    if (headerBg.style.backgroundColor == 'white') {
-        headerBg.style.backgroundColor = 'transparent';
-    } else {
-        headerBg.style.backgroundColor = 'white';
-    }
-
-};
+function changeHeaderColor() {
+    headerBg.classList.toggle('whiteBg');
+}

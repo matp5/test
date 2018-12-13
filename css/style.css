@@ -92,7 +92,7 @@ header {
     color: #292929;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active {
+.navbar .navbar-collapse .navbar-nav .active:before {
     position: absolute;
     content: ' ';
     top: 50%;
@@ -104,7 +104,7 @@ header {
     opacity: 1;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:active {
+.navbar .navbar-collapse .navbar-nav .active:after {
     position: absolute;
     content: ' ';
     top: 50%;
@@ -115,6 +115,7 @@ header {
     background-image: linear-gradient(to right, #e86a36 0%, #f4aa2a 100%);
     opacity: 1;
 }
+
 
 .navbar .navbar-collapse button {
     border: none;
